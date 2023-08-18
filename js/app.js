@@ -20,7 +20,9 @@ app.config(function ($routeProvider) {
     });
 });
 
-app.controller("RatingController", ["$scope",function ($scope) {
+app.controller("RatingController", [
+  "$scope",
+  function ($scope) {
     $scope.ratingValue = 0;
     $scope.tempRating = 0;
     $scope.stars = [1, 2, 3, 4, 5];
@@ -78,3 +80,7 @@ app.controller("CollapseController", function ($scope) {
       $scope.buttonText === "Xem thêm" ? "Rút gọn" : "Xem thêm";
   };
 });
+
+
+
+
