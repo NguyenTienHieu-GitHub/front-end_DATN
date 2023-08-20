@@ -1,0 +1,340 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #F0F0F0;
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: auto;
+    }
+
+    .navbar-brand,
+    #nav-lang,
+    #nav-notifications {
+        display: none;
+    }
+
+
+    #footer {
+        padding-right: 50px;
+    }
+
+}
+
+
+
+/* header search center-div*/
+.search {
+    border: 1px solid #CDCFD0;
+    border-radius: 10px;
+    height: 45px;
+    transition: border-color 0.2s ease-in-out;
+    width: 600px;
+}
+
+.search-bg-icon {
+    color: #fff;
+    background-color: #C92127;
+    width: 72px;
+    height: 30px;
+    border: 1px solid #CDCFD0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon {
+    display: flex;
+    background: url("https://cdn0.fahasa.com/skin/frontend/ma_vanese/fahasa/images/ico_search_white.svg") no-repeat center center;
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+}
+
+
+
+/* Hiển thị dropdown khi hover vào menu cha */
+#dropdown-category:hover .dropdown-menu {
+    display: block;
+    margin-left: -200px;
+    scale: 4s;
+    border-top: 1px solid#CDCFD0;
+}
+
+#dropdown-category:hover .dropdown-menu:hover {
+    display: block;
+}
+
+.search-input {
+    width: 560px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+#drop-menu-category {
+    display: none;
+
+    width: 1200px;
+    height: 450px;
+}
+
+#drop-menu-search {
+    width: 600px;
+    height: 480px;
+}
+
+/* header - rightdiv */
+
+.top-menu-icon {
+    color: gray;
+}
+
+.top-menu-label {
+    line-height: 18px;
+    font-size: 12px;
+    color: #7A7E7F;
+}
+
+/* header - rightdiv -languages*/
+.custom-dropdown-menu {
+    min-width: 100px;
+    /* Đặt kích thước tối thiểu cho dropdown-menu */
+}
+
+.custom-dropdown-menu a.dropdown-item {
+    height: 40px;
+    width: 80px;
+}
+
+/* Footer */
+#footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #181821;
+}
+
+#footer .footer-heading {
+    font-size: 15px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#footer .footer-heading .logo {
+    letter-spacing: none;
+    font-size: 16px;
+    color: #fff;
+}
+
+#footer .text-hihi {
+    font-size: 14px;
+}
+
+#footer .subscribe-form .form-group input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: rgba(255, 255, 255, 0.3) !important;
+}
+
+#footer .list-unstyled li a {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+#footer .copyright {
+    font-size: 13px;
+}
+
+.ftco-footer-social li {
+    list-style: none;
+    display: inline-block;
+}
+
+.product-card:hover {
+    box-shadow: 0 2px 25px -5px rgba(0, 0, 0, .07), 0 25px 21px -5px rgba(0, 0, 0, .04) !important;
+}
+.footer-input{
+    width: 560px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+/* product tab */
+.nav-tabs .nav-link{
+    color: #000;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #F7931E;
+    border: 1px solid #F7931E;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#v-tabs-tabContent .tab-content{
+    display: none;
+}
+#v-tabs-tabContent .nav-link:hover + .tab-content{
+    display: block;
+}
+/* product info */
+.product-title {
+    font-size: 18px;
+    color: #404040;
+}
+
+.product-body,
+.product-body-info {
+    font-size: 14px;
+    color: #22242d;
+}
+
+.rating {
+    font-size: 15px;
+    color: #ccc;
+    cursor: pointer;
+
+}
+
+.rating .rating-input {
+    display: inline-block;
+    width: 30px;
+
+}
+
+.rating .rating-input.filled {
+    color: #FFD700;
+    /* Màu vàng cho các ngôi sao đã chọn */
+}
+
+
+.progress-label {
+    font-size: 13px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* caroutsel */
+
+
+#carouselExampleIndicators .carousel-control-prev {
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    background-color: #ffff;
+    color: black;
+    opacity: 1;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 2px 8px #00000029;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#carouselExampleIndicators .carousel-control-prev:hover {
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    margin-top: -5px;
+}
+
+#carouselExampleIndicators .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    background-color: #ffff;
+    color: black;
+    opacity: 1;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    box-shadow: 0px 2px 8px #00000029;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#carouselExampleIndicators .carousel-control-next:hover {
+    width: 40px;
+    height: 40px;
+    right: -10px;
+    margin-top: -5px;
+    
+}
+
+
+/* Carousel sản phẩm - Chia 5 sản phẩm một hàng và hover */
+.product {
+    flex: 0 0 calc(20% - 10px);
+    /* Chia đều 5 cột với khoảng cách giữa các cột là 10px */
+    max-width: calc(20% - 10px);
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.product .product-item .card-body:hover {
+    box-shadow: 0 2px 25px -5px rgba(0, 0, 0, .07), 0 25px 21px -5px rgba(0, 0, 0, .04) !important;
+    /*  Thêm đường viền khi hover */
+    /* box-shadow:2px 2px 0px rgba(0, 0, 0, 0.2);Đổ bóng khi hover */
+}
+
+/* set tên sản phẩm dài quá sẽ ẩn bớt */
+.product-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 250px; /* Đặt chiều rộng tối đa cho tên sản phẩm */
+  }
+
+
+/* san pham cua trang loc */
+.product-title {
+   
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 17px;
+}
+.product-title a{
+    color: #333333;
+    font-weight: 400;
+}
+
+
+.price-label .price p {
+    
+    color: #C92127;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+
+.rating-container .rating ul {
+    
+    display: flex;
+    list-style: none;
+    color: #FFD700; 
+    line-height: 17px;
+}
+
+.rating-container .rating ul li {
+    margin-right: 5px;
+}
+
+/* pages  */
+.pagination .page-item.active .page-link {
+    background-color: #C92127; /* Màu nền */
+    color: white; /* Màu chữ */
+}
+.page-link:hover{
+    background-color: #FCDAB0; /* Màu nền */
+    color: black;
+}
+.product-grid-card:hover{
+    box-shadow: 0 2px 25px -5px rgba(0, 0, 0, .07), 0 25px 21px -5px rgba(0, 0, 0, .04) !important;
+}
