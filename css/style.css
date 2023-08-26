@@ -1,8 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f6f0;
+    background: #F0F0F0;
 }
-@media screen and (max-width: 992px){
+
+@media (max-width: 767px) {
     body {
         padding: auto;
     }
@@ -19,11 +20,7 @@ body {
     }
 
 }
-.title-product-detail{
-    font-weight: normal;
-    font-size: 1.2em;
-    line-height: 1.25em;
-}
+
 
 
 /* header search center-div*/
@@ -61,7 +58,7 @@ body {
 #dropdown-category:hover .dropdown-menu {
     display: block;
     margin-left: -200px;
-    scale: 2s;
+    scale: 4s;
     border-top: 1px solid#CDCFD0;
 }
 
@@ -159,14 +156,30 @@ body {
 .product-card:hover {
     box-shadow: 0 2px 25px -5px rgba(0, 0, 0, .07), 0 25px 21px -5px rgba(0, 0, 0, .04) !important;
 }
-
-.footer-input {
+.footer-input{
     width: 560px;
     height: 40px;
     border: none;
     outline: none;
 }
-
+/* product tab */
+.nav-tabs .nav-link{
+    color: #000;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    color: #F7931E;
+    border: 1px solid #F7931E;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+#v-tabs-tabContent .tab-content{
+    display: none;
+}
+#v-tabs-tabContent .nav-link:hover + .tab-content{
+    display: block;
+}
 /* product info */
 .product-title {
     font-size: 18px;
@@ -335,4 +348,49 @@ body {
 .image-product-list:hover img {
     border: 1px blue solid;
     border-radius: 10px;
+}
+/* san pham cua trang loc */
+.product-title {
+   
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 17px;
+}
+.product-title a{
+    color: #333333;
+    font-weight: 400;
+}
+
+
+.price-label .price p {
+    
+    color: #C92127;
+    font-weight: bold;
+    line-height: 17px;
+}
+
+
+.rating-container .rating ul {
+    
+    display: flex;
+    list-style: none;
+    color: #FFD700; 
+    line-height: 17px;
+}
+
+.rating-container .rating ul li {
+    margin-right: 5px;
+}
+
+/* pages  */
+.pagination .page-item.active .page-link {
+    background-color: #C92127; /* Màu nền */
+    color: white; /* Màu chữ */
+}
+.page-link:hover{
+    background-color: #FCDAB0; /* Màu nền */
+    color: black;
+}
+.product-grid-card:hover{
+    box-shadow: 0 2px 25px -5px rgba(0, 0, 0, .07), 0 25px 21px -5px rgba(0, 0, 0, .04) !important;
 }

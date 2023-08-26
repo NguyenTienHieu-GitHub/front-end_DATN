@@ -12,6 +12,10 @@ app.config(function ($routeProvider) {
       templateUrl: "html/cart.html",
       controller: "cartCtrl",
     })
+    .when("/category", {
+      templateUrl: "html/allcategory.html",
+
+    })
     .when("/feedback", {
       templateUrl: "html/feedback.html",
     })
